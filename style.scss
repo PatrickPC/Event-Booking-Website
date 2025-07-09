@@ -1,0 +1,165 @@
+
+:root{
+    --main-color:#251a5a;
+    --red:#e74c3c;
+    --oragen:#f39c12;
+    --white:#fff;
+    --black:#2c3e50;
+    --light-color:#888;
+    --light-bg:#eee;
+    --border:.1rem solid rgba(0,0,0,.2);
+ }
+
+ html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
+ 
+
+body {
+
+   font-family: 'Courier New', Courier, monospace;
+   background: rgb(38,0,44);
+background: linear-gradient(90deg, rgba(38,0,44,1) 0%, rgba(232,63,190,0.9237746123840161) 49%, rgba(204,228,230,1) 100%);
+
+color: white;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 80px;
+}
+
+
+
+.btn,
+.back_btn,
+
+.delete-btn{
+   border-radius: .5rem;
+   padding: 1rem 3rem;
+   font-size: 1.8rem;
+   color: #fff;
+   margin-top: 1rem;
+   text-transform: capitalize;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn,
+.delete-btn{
+   display: block;
+   width: 100%;
+}
+
+.back_btn{
+   display: block;
+   width: fit-content;
+   background-color: var(--main-color);
+
+}
+
+.btn{
+   background-color: #251a5a;
+}
+
+.delete-btn,
+.inline-delete-btn{
+   background-color: var(--red);
+}
+
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover,
+.inline-btn:hover,
+.inline-option-btn:hover,
+.inline-delete-btn:hover{
+   background-color: var(--black);
+   color: var(--white);
+}
+
+.logo {
+font-size: 35px;
+font-weight: 650;
+color: #251a5a;
+
+}
+
+nav {
+display: flex;
+gap: 20px;
+}
+
+nav a {
+text-decoration: none;
+color: #251a5a;
+font-size: 16px;
+}
+
+.container {
+    
+    padding: 110px;
+    text-align: center;
+    
+}
+.container .admin h1{
+    text-align: center;
+    margin-left: 70px;
+    text-decoration: underline;
+}
+
+h1 {
+    color: #1e3d5c;
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+margin: 10px 0 30px;
+font-size: 18px;
+text-align: center;
+}
+
+.tabs {
+display: flex;
+justify-content: center;
+gap: 40px;
+margin-bottom: 20px;
+}
+
+.tab {
+font-size: 20px;
+font-weight: bold;
+cursor: pointer;
+border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+border-bottom: 2px solid white;
+}
+
+.content {
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+font-size: 16px;
+}
+
+.content a {
+color: #AAD6F6;
+text-decoration: none;
+}
+
+.content p {
+   
+    text-decoration: none;
+    text-align: center;
+    }
+
+.content a:hover {
+text-decoration: underline;
+}
