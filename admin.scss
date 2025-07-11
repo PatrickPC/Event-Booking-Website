@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+:root{
+   --main-color:#8e44ad;
+   --red:#e74c3c;
+   --oragen:#f39c12;
+   --white:#fff;
+   --black:#2c3e50;
+   --light-color:#888;
+   --light-bg:#eee;
+   --border:.1rem solid rgba(0,0,0,.2);
+}
+
+*{
+   font-family: 'Courier New', Courier, monospace;
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+}
+
+*::selection{
+   background-color: var(--main-color);
+   color: #fff;
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--main-color);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body{
+   
+   padding-left: 30rem;
+   background: rgb(38,0,44);
+background: linear-gradient(90deg, rgba(38,0,44,1) 0%, rgba(232,63,190,0.9237746123840161) 49%, rgba(204,228,230,1) 100%);
+}
+
+body.dark{
+   --white:#222;
+   --black:#fff;
+   --light-color:#aaa;
+   --light-bg:#333;
+   --border:.1rem solid rgba(255,255,255,.2);
+}
+
+body.active{
+   padding-left: 0;
+}
+
+section{
+   padding:2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.btn,
+.option-btn,
+.delete-btn,
+.inline-btn,
+.inline-option-btn,
+.inline-delete-btn{
+   border-radius: .5rem;
+   padding: 1rem 3rem;
+   font-size: 1.8rem;
+   color: #fff;
+   margin-top: 1rem;
+   text-transform: capitalize;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn,
+.delete-btn{
+   display: block;
+   width: 100%;
+}
+
+
+.btn{
+   background-color: var(--main-color);
+}
+
+
+.delete-btn{
+   background-color: var(--red);
+}
+
+.btn:hover,
+.delete-btn:hover{
+   background-color: var(--black);
+   color: var(--white);
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    padding-right: 320px;
+    justify-content: center;
+    min-height:90vh;
+ }
+ 
+.form-container form{
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 2rem;
+ }
+ 
+ .form-container .login{
+    width: 50rem;
+ }
+ 
+ .form-container .register{
+    width: 80rem;
+ }
+ 
+ .form-container form h3{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+    text-transform: capitalize;
+ }
+ 
+ .form-container form p{
+    padding-top: 1rem;
+    font-size: 1.7rem;
+    color: var(--light-color);
+ }
+ 
+ .form-container form p span{
+    color: var(--red);
+ }
+ 
+ .form-container .link{
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+ }
+ 
+ .form-container .link a{
+    color: var(--main-color);
+    
+ }
+ 
+ .form-container .link a:hover{
+    color: var(--black);
+    text-decoration: underline;
+ }
+ 
+ .form-container form .box{
+    width: 100%;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    color: var(--black);
+    padding: 1.4rem;
+    background-color: var(--light-bg);
+ }
+ 
+ .form-container .flex{
+    display: flex;
+    gap: 2rem;
+ }
+ 
+ .form-container .flex .col{
+    flex: 1 1 25rem;
+ }
